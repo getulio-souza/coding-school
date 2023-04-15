@@ -57,3 +57,8 @@ export const Spaces = {
 export const BorderRadius = {
     BUTTON_BORDER: '12px',
 }
+
+export const NavButton = {
+    DARK_TEXT_NORMAL: '#2A2A2A',
+    DARK_TEXT_HOVER: '#000'
+}

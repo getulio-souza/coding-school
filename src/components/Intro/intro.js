@@ -39,7 +39,7 @@ function Intro() {
             </IntroContentText>
             <ButtonsContainer>
               <Button1>Quero estudar!</Button1>
-              <Button2>Quero contratar!</Button2>
+              <Button1>Quero contratar!</Button1>
             </ButtonsContainer>
           </IntroContent>
             <IntroImgContainer>

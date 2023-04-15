@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { BorderRadius, Colors, FontWeights } from '../../shared/DesignTokens';
+import { BorderRadius, Colors, FontWeights, NavButton } from '../../shared/DesignTokens';
 
 export const IntroContainer = styled.section`
     width:100%;
@@ -19,9 +19,11 @@ export const NavbarUl = styled.ul`
 
 export const NavbarLi = styled.li`
     font-weight:${FontWeights.BOLD};
+    color:${NavButton.DARK_TEXT_NORMAL};
     cursor: pointer;
     transition: 0.5s;
     &:hover{
+    color:${NavButton.DARK_TEXT_HOVER};
         opacity:0.9;
     }
 `;
@@ -58,6 +60,7 @@ export const IntroContentTitle = styled.h1`
 export const IntroContentText = styled.h4` 
     min-width: 400px;
     max-width: 400px;
+    font-weight: normal;
 `;
 
 export const ButtonsContainer = styled.div`
@@ -75,7 +78,7 @@ export const Button1 = styled.button`
     border-radius: ${BorderRadius.BUTTON_BORDER};
     transition: 0.5s;
     &:hover{
-        opacity:0.9;
+        color:${Colors.NEUTRAL_BLACK};
         border: 1px solid #000;
     }
 `;
