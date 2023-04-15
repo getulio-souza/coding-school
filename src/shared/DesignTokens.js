@@ -1,7 +1,11 @@
 export const Colors = {
     NEUTRAL_WHITE: '#FFFFF',
     NEUTRAL_BLACK: '#00000',
-    DARK_PURPLE: '#390072'
+    DARK_PURPLE: '#390072',
+    BUTTON_BACKGROUND_PURPLE: '#390072',
+    BUTTON_BACKGROUND_WHITE: '#FFF',
+    BUTTON_TEXT_WHITE: '#FFF',
+    BUTTON_TEXT_BLACK: '#000'
 }
 
 export const FontFamilies = {
