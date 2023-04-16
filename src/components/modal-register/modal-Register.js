@@ -5,6 +5,7 @@ import {
   ModalContainer,
   ModalTitleContainer,
   ModalTitle,
+  ModalSubtitle,
   ModalInputBox,
   ModalInput,
   ModalSelect,
@@ -33,6 +34,7 @@ function ModalRegister({ closeModal }) {
             }}
           />
         </ModalTitleContainer>
+        <ModalSubtitle>Dados currículares</ModalSubtitle>
         <ModalInputBox>
           <ModalSelect>
             <ModalOption>Sua última formação</ModalOption>

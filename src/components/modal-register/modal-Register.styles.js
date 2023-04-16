@@ -11,6 +11,7 @@ export const ModalContainer = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: ${Colors.BUTTON_BACKGROUND_WHITE};
+  padding: 20px 0px;
 `;
 
 export const ModalTitleContainer = styled.div`
@@ -19,6 +20,11 @@ export const ModalTitleContainer = styled.div`
   height: 70px;
   border-radius: 10px 10px 0px 0px;
   position: relative;
+`;
+
+export const ModalSubtitle = styled.div`
+    color:${Colors.BUTTON_TEXT_BLACK};
+    text-align:center;
 `;
 
 export const ModalTitle = styled.h3`
