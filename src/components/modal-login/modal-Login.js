@@ -20,7 +20,13 @@ function ModalLogin({closeModal}) {
       <ModalContainer>
         <ModalTitleContainer>
           <ModalTitle>Login</ModalTitle>
-          <Close className="close-btn-modal"
+          <Close
+            className="close-btn-modal"
+            onClick = {
+              () => {
+                closeModal(false)
+              }
+            }
           />
         </ModalTitleContainer>
         <ModalInputBox>

@@ -5,7 +5,6 @@ import { BorderRadius, Colors } from "../../shared/DesignTokens";
 export const ModalContainer = styled.div`
   width: 250px;
   height: 400px;
-  box-shadow: 1px 1px 3px 2px #ded4d4;
   border-radius:10px 10px 10px 10px;
   position:fixed;
   top:50%;
