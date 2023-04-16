@@ -22,10 +22,10 @@ import ImgIntro from '../../assets/images/intro-img.JPG'
 
 function Intro() {
     //logica para abrir o modal de login
-    const [openLoginModal, SetOpenLoginModal] = useState(false);
-
+  const [openLoginModal, SetOpenLoginModal] = useState(false);
+  
     //logica para abrir o modal de cadastro
-    const [openSubscribeModal, setOpenSubscribeModal] = useState(false);
+  const [openSubscribeModal, setOpenSubscribeModal] = useState(false);
 
   return (
     <>
@@ -34,7 +34,8 @@ function Intro() {
           <NavbarUl>
             <NavbarLi onClick={() => { SetOpenLoginModal(true) }}>Login</NavbarLi>
             {openLoginModal && <ModalLogin closeModal={SetOpenLoginModal} />}
-            <NavbarLi onClick={()=> {setOpenSubscribeModal(true)}}>Register</NavbarLi>
+            <NavbarLi onClick={() => { setOpenSubscribeModal(true) }}>Register</NavbarLi>
+            {openSubscribeModal && <ModalRegister closeModal={setOpenSubscribeModal}/>}
           </NavbarUl>
         </IntroNavbar>
             <IntroContentContainer>
