@@ -7,12 +7,19 @@ export const ModalContainer = styled.div`
   height: 400px;
   box-shadow: 1px 1px 3px 2px #ded4d4;
   border-radius:10px 10px 10px 10px;
+  position:fixed;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:${Colors.BUTTON_BACKGROUND_WHITE};
 `;
+
 export const ModalTitleContainer = styled.div`
   background-color: ${Colors.BUTTON_BACKGROUND_PURPLE};
   margin-bottom: 20px;
   height: 70px;
   border-radius: 10px 10px 0px 0px;
+  position: relative;
 `;
 
 export const ModalTitle = styled.h3`
@@ -30,7 +37,6 @@ export const ModalInputLabel = styled.label`
     padding-bottom:5px;
     font-size: 14px;
 `;
-
 export const ModalInput = styled.input`
   max-width: 170px;
   min-width: 170px;

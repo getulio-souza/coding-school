@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import {
   IntroContainer,
@@ -16,24 +16,29 @@ import {
 } from "./intro.styles";
 
 import ModalLogin from "../modal-login/modal-Login";
+import ModalRegister from "../modal-register/modal-Register";
 
 import ImgIntro from '../../assets/images/intro-img.JPG'
 
 function Intro() {
+    //logica para abrir o modal de login
+    const [openLoginModal, SetOpenLoginModal] = useState(false);
+
+    //logica para abrir o modal de cadastro
+    const [openSubscribeModal, setOpenSubscribeModal] = useState(false);
+
   return (
     <>
       <IntroContainer>
         <IntroNavbar>
           <NavbarUl>
-            <NavbarLi>Login</NavbarLi>
-                <NavbarLi>Register</NavbarLi>
+            <NavbarLi onClick={() => { SetOpenLoginModal(true) }}>Login</NavbarLi>
+            {openLoginModal && <ModalLogin closeModal={SetOpenLoginModal} />}
+            <NavbarLi onClick={()=> {setOpenSubscribeModal(true)}}>Register</NavbarLi>
           </NavbarUl>
         </IntroNavbar>
             <IntroContentContainer>
                   <IntroContent>
-                      
-                                                        < ModalLogin / >
-
             <IntroContentTitle>
               Seja bem vindo a nossa plataforma!
             </IntroContentTitle>

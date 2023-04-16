@@ -1,4 +1,5 @@
 import React from "react";
+import Close from '@material-ui/icons/Close'
 
 import {
   ModalContainer,
@@ -11,12 +12,16 @@ import {
   ModalLogiButton,
 } from "./modal-Login.styles";
 
-function ModalLogin() {
+import '../../assets/global/global.css'
+
+function ModalLogin({closeModal}) {
   return (
     <>
       <ModalContainer>
         <ModalTitleContainer>
           <ModalTitle>Login</ModalTitle>
+          <Close className="close-btn-modal"
+          />
         </ModalTitleContainer>
         <ModalInputBox>
           <ModalInputLabel>E-mail</ModalInputLabel>
@@ -31,7 +36,7 @@ function ModalLogin() {
           <ModalInput type="password" maxLength={15}></ModalInput>
         </ModalInputBox>
         <ModalLogiButtonContainer>
-          <ModalLogiButton>Login</ModalLogiButton>
+          <ModalLogiButton onClick={()=> {}}>Login</ModalLogiButton>
         </ModalLogiButtonContainer>
       </ModalContainer>
     </>
