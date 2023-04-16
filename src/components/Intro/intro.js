@@ -16,7 +16,8 @@ import {
   Button2,
 } from "./intro.styles";
 
-import ImgIntro from '../../assets/images/intro-img.JPG'
+import ImgIntro from "../../assets/images/intro-img.JPG";
+import { Link } from "react-router-dom";
 
 function Intro() {
   return (
@@ -38,13 +39,15 @@ function Intro() {
               mercado de trabalho, e o melhor: de forma gratuita
             </IntroContentText>
             <ButtonsContainer>
-              <Button1>Quero estudar!</Button1>
+              <Link to="/quero-estudar">
+                <Button1>Quero estudar!</Button1>
+              </Link>
               <Button1>Quero contratar!</Button1>
             </ButtonsContainer>
           </IntroContent>
-            <IntroImgContainer>
-              <IntroImg src={ImgIntro}></IntroImg>
-            </IntroImgContainer>
+          <IntroImgContainer>
+            <IntroImg src={ImgIntro}></IntroImg>
+          </IntroImgContainer>
         </IntroContentContainer>
       </IntroContainer>
     </>
