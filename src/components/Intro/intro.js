@@ -13,8 +13,9 @@ import {
   IntroImgContainer,
   IntroImg,
   Button1,
-  Button2,
 } from "./intro.styles";
+
+import ModalLogin from "../modal-login/modal-Login";
 
 import ImgIntro from '../../assets/images/intro-img.JPG'
 
@@ -25,11 +26,14 @@ function Intro() {
         <IntroNavbar>
           <NavbarUl>
             <NavbarLi>Login</NavbarLi>
-            <NavbarLi>Register</NavbarLi>
+                <NavbarLi>Register</NavbarLi>
           </NavbarUl>
         </IntroNavbar>
-        <IntroContentContainer>
-          <IntroContent>
+            <IntroContentContainer>
+                  <IntroContent>
+                      
+                                                        < ModalLogin / >
+
             <IntroContentTitle>
               Seja bem vindo a nossa plataforma!
             </IntroContentTitle>
