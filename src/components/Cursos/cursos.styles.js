@@ -27,9 +27,16 @@ export const CursosContentContainer = styled.article`
 
 export const CursosContent = styled.div``;
 
-export const CursosImgContainer = styled.div``;
+export const CursosImgContainer = styled.div`
+  display: flex;
+  justify-content:center;
+`;
 
-export const CursosImg = styled.img``;
+export const CursosImg = styled.img`
+  width:300px;
+  min-width:300px;
+  max-width:300px;
+`;
 
 export const CursosContentTitle = styled.h1`
   font-size: 32px;

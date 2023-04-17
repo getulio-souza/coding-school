@@ -18,7 +18,7 @@ import {
 import ModalLogin from "../modal-login/modal-Login";
 import ModalRegister from "../modal-register/modal-Register";
 import { Link } from "react-router-dom";
-import ImgIntro from "../../assets/images/intro-img.JPG";
+import ImgIntro from "../../assets/images/photo-1.jpeg";
 
 function Intro() {
   //logica para abrir o modal de login

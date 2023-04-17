@@ -1,6 +1,6 @@
 import React from "react";
 
-import devimg from "../../assets/images/dev-img.png";
+import devimg from "../../assets/images/photo-2.jpeg";
 
 import {
   CursosContainer,
@@ -23,11 +23,11 @@ function Cursos() {
         <CursosContentContainer>
           <CursosContent>
             <CursosContentTitle>
-              Seja bem vindo a nossa plataforma!
+              Seja bem vindo a BeveD!
             </CursosContentTitle>
             <CursosContentText>
               Estamos aqui para te desenvolver profissionalmente e te alocar no
-              mercado de trabalho, e o melhor: de forma gratuita
+              mercado de trabalho, e o melhor: de forma gratuita.
             </CursosContentText>
             <ButtonsContainer>
               <Button1>Quero estudar!</Button1>
@@ -39,7 +39,7 @@ function Cursos() {
               <CursosImg src={devimg}></CursosImg>
             </CursosImgContainer>
             <CursosContentSubtitle>
-              Seja bem vindo a nossa plataforma!
+              Um novo mundo de possibilidades!
             </CursosContentSubtitle>
             <CursosContentText>
               Sabemos que na área de programação, vagas são o que não faltam,
