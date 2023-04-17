@@ -50,14 +50,14 @@ function ModalRegister({ closeModal }) {
         <ModalInputBox>
           <ModalInput
             type="text" 
-            maxLength={11}
+            maxLength={30}
             placeholder="Suas experiências anteriores"
           ></ModalInput>
         </ModalInputBox>
         <ModalInputBox>
           <ModalInput
             type="text"
-            maxLength={15}
+            maxLength={30}
             placeholder = "Seu objetivo"
           ></ModalInput>
           </ModalInputBox>

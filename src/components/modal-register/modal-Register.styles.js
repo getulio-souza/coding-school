@@ -28,11 +28,13 @@ export const ModalTitleContainer = styled.div`
 
 export const ModalSubtitle = styled.div`
     color:${Colors.BUTTON_TEXT_BLACK};
-    text-align:center;
+    padding: 20px 0px 0px 20px;
+    text-align: left;
+    font-weight:bold;
 `;
 
 export const ModalInputContainer = styled.div`
-
+  padding: 20px 0px 40px 0px;
 `;
 
 export const ModalInputBoxContainer = styled.div `
@@ -76,7 +78,6 @@ export const ModalInput = styled.input`
 export const ModalLogiButtonContainer = styled.div`
   display: flex;
   justify-content: center;
-  padding-top: 90px;
 `;
 
 export const ModalLogiButton = styled.button`
