@@ -17,14 +17,14 @@ import {
 
 import ModalLogin from "../modal-login/modal-Login";
 import ModalRegister from "../modal-register/modal-Register";
-
-import ImgIntro from '../../assets/images/intro-img.JPG'
+import { Link } from "react-router-dom";
+import ImgIntro from "../../assets/images/intro-img.JPG";
 
 function Intro() {
-    //logica para abrir o modal de login
+  //logica para abrir o modal de login
   const [openLoginModal, SetOpenLoginModal] = useState(false);
-  
-    //logica para abrir o modal de cadastro
+
+  //logica para abrir o modal de cadastro
   const [openSubscribeModal, setOpenSubscribeModal] = useState(false);
 
   return (
@@ -32,14 +32,28 @@ function Intro() {
       <IntroContainer>
         <IntroNavbar>
           <NavbarUl>
-            <NavbarLi onClick={() => { SetOpenLoginModal(true) }}>Login</NavbarLi>
+            <NavbarLi
+              onClick={() => {
+                SetOpenLoginModal(true);
+              }}
+            >
+              Login
+            </NavbarLi>
             {openLoginModal && <ModalLogin closeModal={SetOpenLoginModal} />}
-            <NavbarLi onClick={() => { setOpenSubscribeModal(true) }}>Register</NavbarLi>
-            {openSubscribeModal && <ModalRegister closeModal={setOpenSubscribeModal}/>}
+            <NavbarLi
+              onClick={() => {
+                setOpenSubscribeModal(true);
+              }}
+            >
+              Register
+            </NavbarLi>
+            {openSubscribeModal && (
+              <ModalRegister closeModal={setOpenSubscribeModal} />
+            )}
           </NavbarUl>
         </IntroNavbar>
-            <IntroContentContainer>
-                  <IntroContent>
+        <IntroContentContainer>
+          <IntroContent>
             <IntroContentTitle>
               Seja bem vindo a nossa plataforma!
             </IntroContentTitle>
@@ -48,13 +62,15 @@ function Intro() {
               mercado de trabalho, e o melhor: de forma gratuita
             </IntroContentText>
             <ButtonsContainer>
-              <Button1>Quero estudar!</Button1>
+              <Link to="/quero-estudar">
+                <Button1>Quero estudar!</Button1>
+              </Link>
               <Button1>Quero contratar!</Button1>
             </ButtonsContainer>
           </IntroContent>
-            <IntroImgContainer>
-              <IntroImg src={ImgIntro}></IntroImg>
-            </IntroImgContainer>
+          <IntroImgContainer>
+            <IntroImg src={ImgIntro}></IntroImg>
+          </IntroImgContainer>
         </IntroContentContainer>
       </IntroContainer>
     </>
