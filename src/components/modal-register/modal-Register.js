@@ -4,8 +4,10 @@ import Close from "@material-ui/icons/Close";
 import {
   ModalContainer,
   ModalTitleContainer,
+  ModalInputBoxContainer,
   ModalTitle,
   ModalSubtitle,
+  ModalInputContainer,
   ModalInputBox,
   ModalInput,
   ModalSelect,
@@ -34,7 +36,9 @@ function ModalRegister({ closeModal }) {
             }}
           />
         </ModalTitleContainer>
-        <ModalSubtitle>Dados currículares</ModalSubtitle>
+        <ModalInputBoxContainer>
+          <ModalSubtitle>Dados currículares</ModalSubtitle>
+          <ModalInputContainer>
         <ModalInputBox>
           <ModalSelect>
             <ModalOption>Sua última formação</ModalOption>
@@ -56,7 +60,9 @@ function ModalRegister({ closeModal }) {
             maxLength={15}
             placeholder = "Seu objetivo"
           ></ModalInput>
-        </ModalInputBox>
+          </ModalInputBox>
+          </ModalInputContainer>
+          
         <ModalLogiButtonContainer>
           <ModalLogiButton>Continuar</ModalLogiButton>
         </ModalLogiButtonContainer>
@@ -69,7 +75,7 @@ function ModalRegister({ closeModal }) {
           </ModalRegisterProgressBar>
           <ModalProgressBarState>3/3</ModalProgressBarState>
         </ModalRegisterProgressBarContainer>
-
+        </ModalInputBoxContainer>
       </ModalContainer>
     </>
   );

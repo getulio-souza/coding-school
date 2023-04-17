@@ -11,6 +11,7 @@ export const ModalContainer = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   background-color:${Colors.BUTTON_BACKGROUND_WHITE};
+  box-shadow: 1px 2px 3px #f0d5d5;
 `;
 
 export const ModalTitleContainer = styled.div`
@@ -18,12 +19,20 @@ export const ModalTitleContainer = styled.div`
   margin-bottom: 20px;
   height: 70px;
   border-radius: 10px 10px 0px 0px;
-  position: relative;
+  position: absolute;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const ModalInputBoxContainer = styled.div`
+  padding-top:80px;
 `;
 
 export const ModalTitle = styled.h3`
-  padding: 20px 0px 0px 20px;
   color: ${Colors.BUTTON_TEXT_WHITE};
+  padding-left: 20px;
 `;
 
 export const ModalInputBox = styled.div`
@@ -47,7 +56,7 @@ export const ModalInput = styled.input`
 export const ModalLogiButtonContainer = styled.div`
   display: flex;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 60px;
 `;
 
 export const ModalLogiButton = styled.button`

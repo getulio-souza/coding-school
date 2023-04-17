@@ -4,6 +4,7 @@ import Close from '@material-ui/icons/Close'
 import {
   ModalContainer,
   ModalTitleContainer,
+  ModalInputBoxContainer,
   ModalTitle,
   ModalInputBox,
   ModalInputLabel,
@@ -29,6 +30,7 @@ function ModalLogin({closeModal}) {
             }
           />
         </ModalTitleContainer>
+        <ModalInputBoxContainer>
         <ModalInputBox>
           <ModalInputLabel>E-mail</ModalInputLabel>
           <ModalInput type="email"></ModalInput>
@@ -44,6 +46,7 @@ function ModalLogin({closeModal}) {
         <ModalLogiButtonContainer>
           <ModalLogiButton onClick={()=> {}}>Login</ModalLogiButton>
         </ModalLogiButtonContainer>
+        </ModalInputBoxContainer>
       </ModalContainer>
     </>
   );

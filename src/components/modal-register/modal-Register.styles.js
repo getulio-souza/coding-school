@@ -11,7 +11,7 @@ export const ModalContainer = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: ${Colors.BUTTON_BACKGROUND_WHITE};
-  padding: 20px 0px;
+  box-shadow: 1px 2px 3px #f0d5d5;
 `;
 
 export const ModalTitleContainer = styled.div`
@@ -19,7 +19,11 @@ export const ModalTitleContainer = styled.div`
   margin-bottom: 20px;
   height: 70px;
   border-radius: 10px 10px 0px 0px;
-  position: relative;
+  position: absolute;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 export const ModalSubtitle = styled.div`
@@ -27,9 +31,17 @@ export const ModalSubtitle = styled.div`
     text-align:center;
 `;
 
+export const ModalInputContainer = styled.div`
+
+`;
+
+export const ModalInputBoxContainer = styled.div `
+  padding-top:80px;
+`;
+
 export const ModalTitle = styled.h3`
-  padding: 20px 0px 0px 20px;
   color: ${Colors.BUTTON_TEXT_WHITE};
+  padding-left: 20px;
 `;
 
 export const ModalInputBox = styled.div`
@@ -85,10 +97,10 @@ export const ModalLogiButton = styled.button`
 export const ModalRegisterProgressBarContainer = styled.div`
   display: flex;
   justify-content: center;
-  padding-top: 10px;
   align-items: center;
   gap: 10px;
   position: relative;
+  padding: 20px 0px 0px 25px;
 `;
 
 export const ModalRegisterProgressBar = styled.div`
