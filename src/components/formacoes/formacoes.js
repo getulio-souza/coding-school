@@ -12,38 +12,30 @@ import {
   CursosImgContainer,
   CursosImg,
   Button1,
-  ButtonLink,
   CursosDescriptionContainer,
   CursosContentSubtitle,
-} from "./cursos.styles";
+} from "./formacoes.styles";
 
-
-function Cursos() {
+function Formacoes() {
   return (
     <>
       <CursosContainer>
         <CursosContentContainer>
           <CursosContent>
             <CursosContentTitle>
-              Olá, Isabella Assis Medeiros
+              Nossos Cursos
             </CursosContentTitle>
             <CursosContentText>
-              Estamos aqui para te desenvolver profissionalmente e te alocar no
-              mercado de trabalho, e o melhor: de forma gratuita.
+              Conheça um pouco mais de nossa plataforma! Podemos te ajudar a conhecer e se especializar em sua área de interesse.
             </CursosContentText>
             <ButtonsContainer>
-              <Button1>
-              <ButtonLink to="/nossas-formacoes">Encontrar cursos</ButtonLink>
-              </Button1>
-              <Button1>Encontrar vagas na minha área</Button1>
+              <Button1>Formação Front-end</Button1>
+              <Button1>Formação Back-end</Button1>
+              <Button1>Formação Fullstack</Button1>
+              <Button1>Outras formações</Button1>
             </ButtonsContainer>
-          </CursosContent>
-          <CursosDescriptionContainer>
-            <CursosImgContainer>
-              <CursosImg src={devimg}></CursosImg>
-            </CursosImgContainer>
             <CursosContentSubtitle>
-              Qual o nosso propósito?
+              Nossas formações
             </CursosContentSubtitle>
             <CursosContentText>
               Sabemos que na área de programação, vagas são o que não faltam,
@@ -52,6 +44,12 @@ function Cursos() {
               assim você pode conseguir um bom emprego na área mais moderna do
               Brasil e do mundo :)
             </CursosContentText>
+          </CursosContent>
+          <CursosDescriptionContainer>
+            <CursosImgContainer>
+              <CursosImg src={devimg}></CursosImg>
+              <CursosImg src={devimg}></CursosImg>
+            </CursosImgContainer>
           </CursosDescriptionContainer>
         </CursosContentContainer>
       </CursosContainer>
@@ -59,4 +57,4 @@ function Cursos() {
   );
 }
 
-export default Cursos;
+export default Formacoes;
