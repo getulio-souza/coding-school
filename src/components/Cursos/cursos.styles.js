@@ -52,6 +52,7 @@ export const CursosContentText = styled.h4`
 
 export const ButtonsContainer = styled.div`
   display: flex;
+  flex-direction: column;
   gap: 20px;
   padding-top: 20px;
 `;
@@ -59,7 +60,9 @@ export const ButtonsContainer = styled.div`
 export const Button1 = styled.button`
   background-color: ${Colors.BUTTON_BACKGROUND_PURPLE};
   color: ${Colors.BUTTON_TEXT_WHITE};
-  width: 148px;
+  width: 350px;
+  min-width: 350px;
+  max-width: 350px;
   height: 54px;
   cursor: pointer;
   border-radius: ${BorderRadius.BUTTON_BORDER};

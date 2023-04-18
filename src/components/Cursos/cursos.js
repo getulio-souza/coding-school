@@ -23,15 +23,15 @@ function Cursos() {
         <CursosContentContainer>
           <CursosContent>
             <CursosContentTitle>
-              Seja bem vindo a BeveD!
+              Olá, Isabella Assis Medeiros
             </CursosContentTitle>
             <CursosContentText>
               Estamos aqui para te desenvolver profissionalmente e te alocar no
               mercado de trabalho, e o melhor: de forma gratuita.
             </CursosContentText>
             <ButtonsContainer>
-              <Button1>Quero estudar!</Button1>
-              <Button1>Quero contratar!</Button1>
+              <Button1>Encontrar cursos</Button1>
+              <Button1>Encontrar vagas na minha área</Button1>
             </ButtonsContainer>
           </CursosContent>
           <CursosDescriptionContainer>
@@ -39,7 +39,7 @@ function Cursos() {
               <CursosImg src={devimg}></CursosImg>
             </CursosImgContainer>
             <CursosContentSubtitle>
-              Um novo mundo de possibilidades!
+              Qual o nosso propósito?
             </CursosContentSubtitle>
             <CursosContentText>
               Sabemos que na área de programação, vagas são o que não faltam,
