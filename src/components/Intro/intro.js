@@ -4,7 +4,8 @@ import {
   IntroContainer,
   IntroNavbar,
   NavbarUl,
-  NavbarLi,
+  NavbarLoginButton,
+  NavbarSubscribeButton,
   IntroContentContainer,
   IntroContent,
   IntroContentTitle,
@@ -32,21 +33,21 @@ function Intro() {
       <IntroContainer>
         <IntroNavbar>
           <NavbarUl>
-            <NavbarLi
+            <NavbarLoginButton
               onClick={() => {
                 SetOpenLoginModal(true);
               }}
             >
               Login
-            </NavbarLi>
+            </NavbarLoginButton>
             {openLoginModal && <ModalLogin closeModal={SetOpenLoginModal} />}
-            <NavbarLi
+            <NavbarSubscribeButton
               onClick={() => {
                 setOpenSubscribeModal(true);
               }}
             >
               Register
-            </NavbarLi>
+            </NavbarSubscribeButton>
             {openSubscribeModal && (
               <ModalRegister closeModal={setOpenSubscribeModal} />
             )}

@@ -38,9 +38,9 @@ export const CursosInfoContainer = styled.div`
   padding-top: 20px;
 `;
 export const CursosImg = styled.img`
-  width:300px;
-  min-width:300px;
-  max-width:300px;
+  width:400px;
+  min-width:400px;
+  max-width:400px;
 `;
 
 export const CursosContentTitle = styled.h1`

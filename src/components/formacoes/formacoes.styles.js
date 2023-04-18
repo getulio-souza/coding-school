@@ -34,15 +34,15 @@ export const CursosImgContainer = styled.div `
 `;
 
 export const CursosImg = styled.img `
-  width:400px;
-  min-width:400px;
-  max-width:400px;
+  width:500px;
+  min-width:500px;
+  max-width:500px;
 `;
 
 export const CursosImg2 = styled.img `
-  width:400px;
-  min-width:400px;
-  max-width:400px;
+  width:500px;
+  min-width:500px;
+  max-width:500px;
   @media (max-width:900px){
     display: none;
   }

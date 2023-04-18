@@ -22,15 +22,31 @@ export const NavbarUl = styled.ul`
   padding: 20px 40px 0px 0px;
 `;
 
-export const NavbarLi = styled.li`
+export const NavbarLoginButton = styled.li`
+  color: ${Colors.BUTTON_TEXT_BLACK};
+  padding: 8px 31px;
+  border-radius: 10px;
   font-weight: ${FontWeights.BOLD};
-  color: ${NavButton.DARK_TEXT_NORMAL};
   cursor: pointer;
   transition: 0.5s;
   font-size: 20px;
   &:hover {
     color: ${NavButton.DARK_TEXT_HOVER};
     opacity: 0.6;
+  }
+`;
+
+export const NavbarSubscribeButton = styled.li`
+  background-color: ${Colors.BUTTON_BACKGROUND_PURPLE};
+  color: ${Colors.BUTTON_TEXT_WHITE};
+  padding: 8px 31px;
+  border-radius: 10px;
+  font-weight: ${FontWeights.BOLD};
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 20px;
+  &:hover {
+    background-color: ${Colors.BUTTON_BACKGROUND_PURPLE_LIGHT};
   }
 `;
 
@@ -49,14 +65,13 @@ export const IntroContentContainer = styled.article`
 
 export const IntroContent = styled.div``;
 
-export const IntroImgContainer = styled.div`
-`;
+export const IntroImgContainer = styled.div``;
 
 export const IntroImg = styled.img`
   width: 500px;
   min-width: 500px;
   max-width: 500px;
-  @media (max-width: 900px){
+  @media (max-width: 900px) {
     display: none;
   }
 `;
@@ -65,8 +80,8 @@ export const IntroContentTitle = styled.h1`
   font-size: 32px;
   min-width: 400px;
   max-width: 400px;
-  @media (max-width: 900px){
-    font-size: 52px;  
+  @media (max-width: 900px) {
+    font-size: 52px;
   }
 `;
 
