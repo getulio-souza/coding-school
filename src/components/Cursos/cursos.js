@@ -12,11 +12,11 @@ import {
   CursosImgContainer,
   CursosImg,
   Button1,
-  ButtonLink,
   CursosDescriptionContainer,
   CursosContentSubtitle,
 } from "./cursos.styles";
 
+import { Link } from "react-router-dom";
 
 function Cursos() {
   return (
@@ -33,7 +33,9 @@ function Cursos() {
             </CursosContentText>
             <ButtonsContainer>
               <Button1>
-              <ButtonLink to="/nossas-formacoes">Encontrar cursos</ButtonLink>
+                <Link to="/nossas-formacoes"
+                  style={{ color: 'white', textDecoration: 'none'}}
+                >Encontrar cursos</Link>
               </Button1>
               <Button1>Encontrar vagas na minha área</Button1>
             </ButtonsContainer>

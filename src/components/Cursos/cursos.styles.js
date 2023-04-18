@@ -4,7 +4,6 @@ import {
   Colors,
 } from "../../shared/DesignTokens";
 
-import { Link } from "react-router-dom";
 
 export const CursosContainer = styled.section`
   width: 100%;
@@ -55,23 +54,6 @@ export const ButtonsContainer = styled.div`
   flex-direction: column;
   gap: 20px;
   padding-top: 20px;
-`;
-
-export const ButtonLink = styled(Link)`
-  text-decoration: none;
-  background-color: ${Colors.BUTTON_BACKGROUND_PURPLE};
-  color: ${Colors.BUTTON_TEXT_WHITE};
-  width: 350px;
-  min-width: 350px;
-  max-width: 350px;
-  height: 54px;
-  cursor: pointer;
-  border-radius: ${BorderRadius.BUTTON_BORDER};
-  transition: 0.5s;
-  &:hover {
-    color: ${Colors.NEUTRAL_BLACK};
-    border: 1px solid #000;
-  }
 `;
 
 export const Button1 = styled.button`
