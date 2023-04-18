@@ -8,7 +8,7 @@ import {
 
 export const IntroContainer = styled.section`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: ${Colors.NEUTRAL_WHITE};
 `;
 
@@ -17,9 +17,9 @@ export const IntroNavbar = styled.nav``;
 export const NavbarUl = styled.ul`
   list-style-type: none;
   display: flex;
-  gap: 20px;
+  gap: 40px;
   justify-content: flex-end;
-  padding: 10px 40px 0px 0px;
+  padding: 20px 40px 0px 0px;
 `;
 
 export const NavbarLi = styled.li`
@@ -27,9 +27,10 @@ export const NavbarLi = styled.li`
   color: ${NavButton.DARK_TEXT_NORMAL};
   cursor: pointer;
   transition: 0.5s;
+  font-size: 20px;
   &:hover {
     color: ${NavButton.DARK_TEXT_HOVER};
-    opacity: 0.9;
+    opacity: 0.6;
   }
 `;
 
@@ -37,7 +38,7 @@ export const IntroContentContainer = styled.article`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 40px 0px 0px 40px;
+  padding: 80px 0px 0px 40px;
   @media (max-width: 900px) {
     display: flex;
     flex-direction: column;
@@ -48,24 +49,36 @@ export const IntroContentContainer = styled.article`
 
 export const IntroContent = styled.div``;
 
-export const IntroImgContainer = styled.div``;
+export const IntroImgContainer = styled.div`
+`;
 
 export const IntroImg = styled.img`
   width: 500px;
   min-width: 500px;
   max-width: 500px;
+  @media (max-width: 900px){
+    display: none;
+  }
 `;
 
 export const IntroContentTitle = styled.h1`
   font-size: 32px;
   min-width: 400px;
   max-width: 400px;
+  @media (max-width: 900px){
+    font-size: 52px;  
+  }
 `;
 
 export const IntroContentText = styled.h4`
   min-width: 400px;
   max-width: 400px;
   font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  width: 450px;
+  min-width: 450px;
+  max-width: 450px;
 `;
 
 export const ButtonsContainer = styled.div`
@@ -77,8 +90,13 @@ export const ButtonsContainer = styled.div`
 export const Button1 = styled.button`
   background-color: ${Colors.BUTTON_BACKGROUND_PURPLE};
   color: ${Colors.BUTTON_TEXT_WHITE};
-  width: 148px;
-  height: 54px;
+  width: 200px;
+  min-width: 200px;
+  max-width: 200px;
+  height: 60px;
+  min-height: 60px;
+  max-height: 60px;
+  font-size: 18px;
   cursor: pointer;
   border-radius: ${BorderRadius.BUTTON_BORDER};
   transition: 0.5s;

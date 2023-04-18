@@ -7,15 +7,18 @@ import {
 
 export const CursosContainer = styled.section`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: ${Colors.NEUTRAL_WHITE};
+  justify-content: center;
 `;
 
 export const CursosContentContainer = styled.article`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 40px 0px 0px 40px;
+  align-items: center;
+  padding: 40px 0px;
+
   @media (max-width: 900px) {
     display: flex;
     flex-direction: column;
@@ -31,6 +34,9 @@ export const CursosImgContainer = styled.div`
   justify-content:center;
 `;
 
+export const CursosInfoContainer = styled.div`
+  padding-top: 20px;
+`;
 export const CursosImg = styled.img`
   width:300px;
   min-width:300px;
@@ -44,9 +50,17 @@ export const CursosContentTitle = styled.h1`
 `;
 
 export const CursosContentText = styled.h4`
-  min-width: 400px;
-  max-width: 400px;
+  font-size: 20px;
+  line-height: 28px;
+  width: 450px;
+  min-width: 450px;
+  max-width: 450px;
   font-weight: normal;
+  @media (max-width:900px){
+    width: 400px;
+    min-width: 400px;
+    max-width: 400px;
+  }
 `;
 
 export const ButtonsContainer = styled.div`
@@ -62,7 +76,10 @@ export const Button1 = styled.button`
   width: 350px;
   min-width: 350px;
   max-width: 350px;
-  height: 54px;
+  height: 60px;
+  min-height: 60px;
+  max-height: 60px;
+  font-size: 18px;
   cursor: pointer;
   border-radius: ${BorderRadius.BUTTON_BORDER};
   transition: 0.5s;
@@ -90,7 +107,7 @@ export const CursosDescriptionContainer = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 40px 0px 0px 40px;
+  padding: 40px 0px;
   @media (max-width: 900px) {
     display: flex;
     flex-direction: column;
@@ -100,7 +117,7 @@ export const CursosDescriptionContainer = styled.article`
 `;
 
 export const CursosContentSubtitle = styled.h2`
-  font-size: 22px;
+  font-size: 26px;
   min-width: 400px;
   max-width: 400px;
   margin-bottom: 0;

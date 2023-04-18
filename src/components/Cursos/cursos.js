@@ -10,6 +10,7 @@ import {
   CursosContentText,
   ButtonsContainer,
   CursosImgContainer,
+  CursosInfoContainer,
   CursosImg,
   Button1,
   CursosDescriptionContainer,
@@ -44,6 +45,7 @@ function Cursos() {
             <CursosImgContainer>
               <CursosImg src={devimg}></CursosImg>
             </CursosImgContainer>
+            <CursosInfoContainer>
             <CursosContentSubtitle>
               Qual o nosso propósito?
             </CursosContentSubtitle>
@@ -54,6 +56,7 @@ function Cursos() {
               assim você pode conseguir um bom emprego na área mais moderna do
               Brasil e do mundo :)
             </CursosContentText>
+            </CursosInfoContainer>
           </CursosDescriptionContainer>
         </CursosContentContainer>
       </CursosContainer>

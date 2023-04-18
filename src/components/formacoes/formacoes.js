@@ -1,6 +1,7 @@
 import React from "react";
 
 import devimg from "../../assets/images/photo-2.jpeg";
+import devimg2 from "../../assets/images/new-image.jpg";
 
 import {
   CursosContainer,
@@ -9,8 +10,10 @@ import {
   CursosContentTitle,
   CursosContentText,
   ButtonsContainer,
+  FormationInfoContainer,
   CursosImgContainer,
   CursosImg,
+  CursosImg2,
   Button1,
   CursosDescriptionContainer,
   CursosContentSubtitle,
@@ -34,6 +37,7 @@ function Formacoes() {
               <Button1>Formação Fullstack</Button1>
               <Button1>Outras formações</Button1>
             </ButtonsContainer>
+            <FormationInfoContainer>
             <CursosContentSubtitle>
               Nossas formações
             </CursosContentSubtitle>
@@ -44,11 +48,13 @@ function Formacoes() {
               assim você pode conseguir um bom emprego na área mais moderna do
               Brasil e do mundo :)
             </CursosContentText>
+            </FormationInfoContainer>
+
           </CursosContent>
           <CursosDescriptionContainer>
             <CursosImgContainer>
               <CursosImg src={devimg}></CursosImg>
-              <CursosImg src={devimg}></CursosImg>
+              <CursosImg2 src={devimg2}></CursosImg2>
             </CursosImgContainer>
           </CursosDescriptionContainer>
         </CursosContentContainer>
