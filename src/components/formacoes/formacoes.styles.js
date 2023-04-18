@@ -4,13 +4,13 @@ import {
     Colors,
 } from "../../shared/DesignTokens";
 
-export const CursosContainer = styled.section `
+export const FormacoesContainer = styled.section `
   width: 100%;
   height: 100%;
   background-color: ${Colors.NEUTRAL_WHITE};
 `;
 
-export const CursosContentContainer = styled.article `
+export const FormacoesContentContainer = styled.article `
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -24,22 +24,22 @@ export const CursosContentContainer = styled.article `
   }
 `;
 
-export const CursosContent = styled.div ``;
+export const FormacoesContent = styled.div ``;
 
-export const CursosImgContainer = styled.div `
+export const FormacoesImgContainer = styled.div `
   display: flex;
   flex-direction: column;
   justify-content:center;
   gap:40px;
 `;
 
-export const CursosImg = styled.img `
+export const FormacoesImg = styled.img `
   width:500px;
   min-width:500px;
   max-width:500px;
 `;
 
-export const CursosImg2 = styled.img `
+export const FormacoesImg2 = styled.img `
   width:500px;
   min-width:500px;
   max-width:500px;
@@ -48,13 +48,13 @@ export const CursosImg2 = styled.img `
   }
 `;
 
-export const CursosContentTitle = styled.h1 `
+export const FormacoesContentTitle = styled.h1 `
   font-size: 32px;
   min-width: 400px;
   max-width: 400px;
 `;
 
-export const CursosContentText = styled.h4 `
+export const FormacoesContentText = styled.h4 `
   font-size: 20px;
   line-height: 28px;
   width: 450px;
@@ -74,7 +74,7 @@ export const FormationInfoContainer = styled.div`
   padding-top: 20px;
 `;
 
-export const Button1 = styled.button `
+export const FormacaoButton = styled.button `
   background-color: ${Colors.BUTTON_BACKGROUND_PURPLE};
   color: ${Colors.BUTTON_TEXT_WHITE};
   width: 200px;
@@ -93,20 +93,7 @@ export const Button1 = styled.button `
   }
 `;
 
-export const Button2 = styled.button `
-  background-color: ${Colors.NEUTRAL_WHITE};
-  width: 148px;
-  height: 54px;
-  cursor: pointer;
-  border-radius: ${BorderRadius.BUTTON_BORDER};
-  transition: 0.5s;
-  &:hover {
-    opacity: 0.9;
-    border: 1px solid #000;
-  }
-`;
-
-export const CursosDescriptionContainer = styled.article `
+export const FormacoesDescriptionContainer = styled.article `
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -119,7 +106,7 @@ export const CursosDescriptionContainer = styled.article `
   }
 `;
 
-export const CursosContentSubtitle = styled.h2 `
+export const FormacoesContentSubtitle = styled.h2 `
   font-size: 26px;
   min-width: 400px;
   max-width: 400px;

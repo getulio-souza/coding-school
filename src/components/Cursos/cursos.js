@@ -43,7 +43,7 @@ function Cursos() {
           </CursosContent>
           <CursosDescriptionContainer>
             <CursosImgContainer>
-              <CursosImg src={devimg}></CursosImg>
+              <CursosImg src={devimg} alt="homem-sentado-com-notebook-no-colo"></CursosImg>
             </CursosImgContainer>
             <CursosInfoContainer>
             <CursosContentSubtitle>

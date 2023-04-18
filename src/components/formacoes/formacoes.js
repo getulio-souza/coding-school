@@ -4,61 +4,61 @@ import devimg from "../../assets/images/photo-2.jpeg";
 import devimg2 from "../../assets/images/new-image.jpg";
 
 import {
-  CursosContainer,
-  CursosContentContainer,
-  CursosContent,
-  CursosContentTitle,
-  CursosContentText,
+  FormacoesContainer,
+  FormacoesContentContainer,
+  FormacoesContent,
+  FormacoesContentTitle,
+  FormacoesContentText,
   ButtonsContainer,
   FormationInfoContainer,
-  CursosImgContainer,
-  CursosImg,
-  CursosImg2,
-  Button1,
-  CursosDescriptionContainer,
-  CursosContentSubtitle,
+  FormacoesImgContainer,
+  FormacoesImg,
+  FormacoesImg2,
+  FormacaoButton,
+  FormacoesDescriptionContainer,
+  FormacoesContentSubtitle,
 } from "./formacoes.styles";
 
 function Formacoes() {
   return (
     <>
-      <CursosContainer>
-        <CursosContentContainer>
-          <CursosContent>
-            <CursosContentTitle>
+      <FormacoesContainer>
+        <FormacoesContentContainer>
+          <FormacoesContent>
+            <FormacoesContentTitle>
               Nossos Cursos
-            </CursosContentTitle>
-            <CursosContentText>
+            </FormacoesContentTitle>
+            <FormacoesContentText>
               Conheça um pouco mais de nossa plataforma! Podemos te ajudar a conhecer e se especializar em sua área de interesse.
-            </CursosContentText>
+            </FormacoesContentText>
             <ButtonsContainer>
-              <Button1>Formação Front-end</Button1>
-              <Button1>Formação Back-end</Button1>
-              <Button1>Formação Fullstack</Button1>
-              <Button1>Outras formações</Button1>
+              <FormacaoButton>Formação Front-end</FormacaoButton>
+              <FormacaoButton>Formação Back-end</FormacaoButton>
+              <FormacaoButton>Formação Fullstack</FormacaoButton>
+              <FormacaoButton>Outras formações</FormacaoButton>
             </ButtonsContainer>
             <FormationInfoContainer>
-            <CursosContentSubtitle>
+            <FormacoesContentSubtitle>
               Nossas formações
-            </CursosContentSubtitle>
-            <CursosContentText>
+            </FormacoesContentSubtitle>
+            <FormacoesContentText>
               Sabemos que na área de programação, vagas são o que não faltam,
               por isso, unimos o útil ao agradável. Temos empresas parceiras
               focadas em tecnologia que verificam seu desempenho e currículo,
               assim você pode conseguir um bom emprego na área mais moderna do
               Brasil e do mundo :)
-            </CursosContentText>
+            </FormacoesContentText>
             </FormationInfoContainer>
 
-          </CursosContent>
-          <CursosDescriptionContainer>
-            <CursosImgContainer>
-              <CursosImg src={devimg}></CursosImg>
-              <CursosImg2 src={devimg2}></CursosImg2>
-            </CursosImgContainer>
-          </CursosDescriptionContainer>
-        </CursosContentContainer>
-      </CursosContainer>
+          </FormacoesContent>
+          <FormacoesDescriptionContainer>
+            <FormacoesImgContainer>
+              <FormacoesImg src={devimg} alt="homem-sentado-com-notebook-no-colo"></FormacoesImg>
+              <FormacoesImg2 src={devimg2} alt="imagem-de-uma-agenda-fechada-com-marcador-a-mostra"></FormacoesImg2>
+            </FormacoesImgContainer>
+          </FormacoesDescriptionContainer>
+        </FormacoesContentContainer>
+      </FormacoesContainer>
     </>
   );
 }
