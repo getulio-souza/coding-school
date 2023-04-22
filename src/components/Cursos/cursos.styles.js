@@ -10,6 +10,7 @@ export const CursosContainer = styled.section`
   height: 100vh;
   background-color: ${Colors.NEUTRAL_WHITE};
   justify-content: center;
+  position: relative;
 `;
 
 export const CursosContentContainer = styled.article`

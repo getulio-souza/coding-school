@@ -19,10 +19,26 @@ import {
   FormacoesContentSubtitle,
 } from "./formacoes.styles";
 
+import { GoBackBtn } from "../../assets/global/goBackBtn";
+
+import { Link } from "react-router-dom";
+
 function Formacoes() {
   return (
     <>
       <FormacoesContainer>
+        <GoBackBtn>
+          <Link to="/quero-estudar"
+          style = {
+            {
+              color: "white",
+              textDecoration: "none"
+            }
+          }
+          >
+          Voltar  
+          </Link>
+        </GoBackBtn>
         <FormacoesContentContainer>
           <FormacoesContent>
             <FormacoesContentTitle>

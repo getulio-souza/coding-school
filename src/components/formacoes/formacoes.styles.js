@@ -14,7 +14,7 @@ export const FormacoesContentContainer = styled.article `
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 40px 0px;
+  padding: 80px 0px 0px 40px;
 
   @media (max-width: 900px) {
     display: flex;
