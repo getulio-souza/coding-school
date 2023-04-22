@@ -35,7 +35,7 @@ function Cursos() {
         <CursosContentContainer>
           <CursosContent>
             <CursosContentTitle>
-              Olá, Isabella Assis Medeiros
+              Olá, Getúlio de Souza
             </CursosContentTitle>
             <CursosContentText>
               Estamos aqui para te desenvolver profissionalmente e te alocar no
