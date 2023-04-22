@@ -56,7 +56,7 @@ function Intro() {
         <IntroContentContainer>
           <IntroContent>
             <IntroContentTitle>
-              Seja bem vindo a nossa plataforma!
+              Seja bem vindo a BeDev!
             </IntroContentTitle>
             <IntroContentText>
               Estamos aqui para te desenvolver profissionalmente e te alocar no

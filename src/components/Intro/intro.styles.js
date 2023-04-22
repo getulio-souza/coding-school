@@ -54,7 +54,7 @@ export const IntroContentContainer = styled.article`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 80px 0px 0px 40px;
+  padding: 40px 0px 0px 40px;
   @media (max-width: 900px) {
     display: flex;
     flex-direction: column;
