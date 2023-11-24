@@ -19,7 +19,7 @@ import {
 import ModalLogin from "../modal-login/modal-Login";
 import ModalRegister from "../modal-register/modal-Register";
 import { Link } from "react-router-dom";
-import ImgIntro from "../../assets/images/photo-1.jpeg";
+import ImgIntro from "../../assets/images/intro-img (1).png";
 
 function Intro() {
   //logica para abrir o modal de login
@@ -66,7 +66,9 @@ function Intro() {
               <Link to="/quero-estudar">
                 <Button1>Quero estudar!</Button1>
               </Link>
-              <Button1>Quero contratar!</Button1>
+              <Link to="/vagas">
+              <Button1>Quero trabalhar</Button1>
+              </Link>
             </ButtonsContainer>
           </IntroContent>
           <IntroImgContainer>

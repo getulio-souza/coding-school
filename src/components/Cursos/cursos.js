@@ -1,6 +1,6 @@
 import React from "react";
 
-import devimg from "../../assets/images/photo-2.jpeg";
+import devimg from "../../assets/images/intro-img(2).jpg";
 
 import {
   CursosContainer,
@@ -50,7 +50,7 @@ function Cursos() {
                   Encontrar cursos
                 </Link>
               </Button1>
-              <Button1>Encontrar vagas na minha área</Button1>
+              {/* <Button1>Encontrar vagas na minha área</Button1> */}
             </ButtonsContainer>
           </CursosContent>
           <CursosDescriptionContainer>
@@ -69,7 +69,7 @@ function Cursos() {
                 por isso, unimos o útil ao agradável. Temos empresas parceiras
                 focadas em tecnologia que verificam seu desempenho e currículo,
                 assim você pode conseguir um bom emprego na área mais moderna do
-                Brasil e do mundo :)
+                Brasil e do mundo. 
               </CursosContentText>
             </CursosInfoContainer>
           </CursosDescriptionContainer>

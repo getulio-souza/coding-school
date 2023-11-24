@@ -1,7 +1,7 @@
 import React from "react";
 
-import devimg from "../../assets/images/photo-2.jpeg";
-import devimg2 from "../../assets/images/new-image.jpg";
+import devimg from "../../assets/images/intro-img (1).png";
+import devimg2 from "../../assets/images/intro-img (1).jpeg";
 
 import {
   FormacoesContainer,
@@ -58,11 +58,7 @@ function Formacoes() {
               Nossas formações
             </FormacoesContentSubtitle>
             <FormacoesContentText>
-              Sabemos que na área de programação, vagas são o que não faltam,
-              por isso, unimos o útil ao agradável. Temos empresas parceiras
-              focadas em tecnologia que verificam seu desempenho e currículo,
-              assim você pode conseguir um bom emprego na área mais moderna do
-              Brasil e do mundo :)
+              Sabemos que na área de programação, todo o conhecimento é bem-vindo. Por isso preparamos uma serie de trilhas que vão te ajudar a se destacar no mercado de trabalho de tecnologia, seja para Front-End, Back-End ou Fullstack. 
             </FormacoesContentText>
             </FormationInfoContainer>
 
