@@ -4,7 +4,7 @@ import { BorderRadius, Colors } from "../../shared/DesignTokens";
 
 export const ModalContainer = styled.div`
   width: 250px;
-  height: 400px;
+  height: 350px;
   border-radius:10px 10px 10px 10px;
   position:fixed;
   top:50%;
@@ -55,8 +55,10 @@ export const ModalInput = styled.input`
 
 export const ModalLogiButtonContainer = styled.div`
   display: flex;
+  flex-direction:column; 
   justify-content: center;
-  padding-top: 60px;
+  align-items:center;
+  /* padding-top: 60px; */
 `;
 
 export const ModalLogiButton = styled.button`
