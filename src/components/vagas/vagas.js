@@ -51,9 +51,15 @@ function Vagas() {
               <Link to="/vagas-front-end">
               <FormacaoButton>Vagas Front-end</FormacaoButton>
               </Link>
+              <Link to="/vagas-front-end">
               <FormacaoButton>Vagas Back-end</FormacaoButton>
+              </Link>
+              <Link to="/vagas-front-end">
               <FormacaoButton>Vagas Fullstack</FormacaoButton>
+              </Link>
+              <Link to="/vagas-front-end">
               <FormacaoButton>Outras Vagas</FormacaoButton>
+              </Link>
             </ButtonsContainer>
             <FormationInfoContainer>
             <VagasContentSubtitle>
