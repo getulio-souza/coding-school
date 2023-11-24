@@ -19,7 +19,7 @@ import {
 import ModalLogin from "../modal-login/modal-Login";
 import ModalRegister from "../modal-register/modal-Register";
 import { Link } from "react-router-dom";
-import ImgIntro from "../../assets/images/intro-img (1).png";
+import ImgIntro from "../../assets/images/intro-img (2).jpeg";
 
 function Intro() {
   //logica para abrir o modal de login
@@ -38,7 +38,7 @@ function Intro() {
                 SetOpenLoginModal(true);
               }}
             >
-              Login
+              Entrar
             </NavbarLoginButton>
             {openLoginModal && <ModalLogin closeModal={SetOpenLoginModal} />}
             <NavbarSubscribeButton
@@ -46,7 +46,7 @@ function Intro() {
                 setOpenSubscribeModal(true);
               }}
             >
-              Register
+              Cadastrar
             </NavbarSubscribeButton>
             {openSubscribeModal && (
               <ModalRegister closeModal={setOpenSubscribeModal} />

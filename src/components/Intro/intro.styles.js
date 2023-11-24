@@ -23,6 +23,7 @@ export const NavbarUl = styled.ul`
 `;
 
 export const NavbarLoginButton = styled.li`
+  border: 1px solid #2a2a2a;
   color: ${Colors.BUTTON_TEXT_BLACK};
   padding: 8px 31px;
   border-radius: 10px;
@@ -68,9 +69,9 @@ export const IntroContent = styled.div``;
 export const IntroImgContainer = styled.div``;
 
 export const IntroImg = styled.img`
-  width: 500px;
-  min-width: 500px;
-  max-width: 500px;
+  width: 600px;
+  min-width: 600px;
+  max-width: 600px;
   @media (max-width: 900px) {
     display: none;
   }
