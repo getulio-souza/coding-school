@@ -1,6 +1,6 @@
 import React from "react";
 
-import devimg from "../../assets/images/intro-img (1).png";
+import devimg from "../../assets/images/intro-img (2).jpeg";
 import devimg2 from "../../assets/images/intro-img (1).jpeg";
 
 import {
