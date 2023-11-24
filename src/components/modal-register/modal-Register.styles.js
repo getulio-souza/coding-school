@@ -35,6 +35,8 @@ export const ModalSubtitle = styled.div`
 
 export const ModalInputContainer = styled.div`
   padding: 20px 0px 40px 0px;
+  display: flex;
+  flex-direction:column;
 `;
 
 export const ModalInputBoxContainer = styled.div `

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Close from "@material-ui/icons/Close";
 
 import {
@@ -6,24 +6,47 @@ import {
   ModalTitleContainer,
   ModalInputBoxContainer,
   ModalTitle,
-  ModalSubtitle,
   ModalInputContainer,
   ModalInputBox,
   ModalInput,
-  ModalSelect,
-  ModalOption,
   ModalLogiButtonContainer,
   ModalLogiButton,
-  ModalRegisterProgressBarContainer,
-  ModalRegisterProgressBar,
-  ModalRegisterProgressBarValue,
-  ModalProgressBarState
 } from "./modal-Register.styles";
 
 import "./modal-register.css"
 import "../../assets/global/global.css";
 
 function ModalRegister({ closeModal }) {
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [error, setError] = useState("");
+
+  const validateForm = () => {
+    if (!fullName || !email || !password || !confirmPassword) {
+      setError("Por favor, preencha todos os campos.");
+      return false;
+    }
+
+    if (password !== confirmPassword) {
+      setError("As senhas não coincidem.");
+      return false;
+    }
+
+    // Adicione outras validações conforme necessário
+
+    setError("");
+    return true;
+  };
+
+  const handleRegister = () => {
+    if (validateForm()) {
+      // Lógica para realizar o cadastro
+      console.log("Cadastro bem-sucedido!");
+    }
+  };
+
   return (
     <>
       <ModalContainer>
@@ -37,44 +60,52 @@ function ModalRegister({ closeModal }) {
           />
         </ModalTitleContainer>
         <ModalInputBoxContainer>
-          <ModalSubtitle>Dados currículares</ModalSubtitle>
           <ModalInputContainer>
-        <ModalInputBox>
-          <ModalSelect>
-            <ModalOption>Sua última formação</ModalOption>
-            <ModalOption value={0}>formação 1</ModalOption>
-            <ModalOption>formação 2</ModalOption>
-            <ModalOption>formação 3</ModalOption>
-          </ModalSelect>
-        </ModalInputBox>
-        <ModalInputBox>
-          <ModalInput
-            type="text" 
-            maxLength={30}
-            placeholder="Suas experiências anteriores"
-          ></ModalInput>
-        </ModalInputBox>
-        <ModalInputBox>
-          <ModalInput
-            type="text"
-            maxLength={30}
-            placeholder = "Seu objetivo"
-          ></ModalInput>
-          </ModalInputBox>
+            <ModalInputBox>
+              <ModalInput
+                type="text"
+                maxLength={30}
+                placeholder="Nome completo"
+                value={fullName}
+                onChange={(e) => setFullName(e.target.value)}
+              />
+            </ModalInputBox>
+            <ModalInputBox>
+              <ModalInput
+                type="email"
+                maxLength={30}
+                placeholder="E-mail"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </ModalInputBox>
+            <ModalInputBox>
+              <ModalInput
+                type="password"
+                maxLength={30}
+                placeholder="Senha"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </ModalInputBox>
+            <ModalInputBox>
+              <ModalInput
+                type="password"
+                maxLength={30}
+                placeholder="Confirmar senha"
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+              />
+            </ModalInputBox>
           </ModalInputContainer>
-          
-        <ModalLogiButtonContainer>
-          <ModalLogiButton>Continuar</ModalLogiButton>
-        </ModalLogiButtonContainer>
-
-        <ModalRegisterProgressBarContainer>
-          <ModalRegisterProgressBar>
-            <ModalRegisterProgressBarValue
-            className="progress new-progress"
-            ></ModalRegisterProgressBarValue>
-          </ModalRegisterProgressBar>
-          <ModalProgressBarState>3/3</ModalProgressBarState>
-        </ModalRegisterProgressBarContainer>
+          {error && (
+            <p style={{ color: "red", fontSize: 12, textAlign: "center" }}>
+              {error}
+            </p>
+          )}
+          <ModalLogiButtonContainer>
+            <ModalLogiButton onClick={handleRegister}>Cadastrar</ModalLogiButton>
+          </ModalLogiButtonContainer>
         </ModalInputBoxContainer>
       </ModalContainer>
     </>
@@ -82,3 +113,4 @@ function ModalRegister({ closeModal }) {
 }
 
 export default ModalRegister;
+
