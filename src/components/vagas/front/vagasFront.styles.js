@@ -8,6 +8,12 @@ export const BackgroundContainer = styled.div `
   height: 100%;
 `;
 
+export const MainContainer = styled.section`
+ @media (max-width:900px){
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+ }
+`
 export const Header = styled.div `
   padding-left: 20px;
   padding-right: 20px;
@@ -17,19 +23,24 @@ export const Title = styled.h1 `
   font-size: 30px;
   font-weight: 700;
   padding-top: 80px;
-  /* padding-bottom: 20px; */
   text-align: center;
 `;
 
 export const BackgroundCard = styled.div `
-  width: 22%;
-  /* height: 200px; */
+  min-width: 270px;
+  max-width: 270px;
   background-color: #e6deee;
   padding: 20px;
   display: flex;
   justify-content: center;
   gap: 60px;
   border-radius: 10px;
+`;
+
+export const CardInnerBox = styled.div`
+  width: 230px;
+  min-width:230px;
+  max-width:230px;
 `;
 
 export const JobTitle = styled.div `
@@ -45,11 +56,10 @@ export const CompanyLocation = styled.div `
 `;
 
 export const CompanyLocationInfo = styled.div `
-  align-items: flex-start;
-  justify-content: center;
-  height: 100px;
-  padding-left: 15px;
-  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0px 10px;
 `;
 
 export const ShowMoreBtn = styled.button`

@@ -2,9 +2,11 @@ import React from "react";
 import jobLogo from "../../../assets/images/job-logo.png";
 import {
   BackgroundContainer,
+  MainContainer,
   Header,
   Title,
   BackgroundCard,
+  CardInnerBox,
   JobTitle,
   CompanyLocation,
   CompanyLocationInfo,
@@ -94,12 +96,12 @@ const VagasFront = ({ navigation }) => {
         <p>Novas oportunidades todas as semanas </p>
       </div>
 
-      <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 30 }}>
+      <MainContainer style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 30 }}>
         {/* Render multiple job cards */}
         {jobData.map((job, index) => (
           <BackgroundCard key={index}>
             {/* jobinfo */}
-            <div>
+            <CardInnerBox>
               <div style={{ flexDirection: "row", paddingBottom: 20, gap: 40 }}>
                 <JobTitle>
                   <div>
@@ -124,13 +126,13 @@ const VagasFront = ({ navigation }) => {
                 </CompanyLocationInfo>
               </CompanyLocation>
               {/* show more btn */}
-              <Link to="/front-single-job">
+              <Link Link to = "//single-job" >
                 <ShowMoreBtn>Mostrar mais</ShowMoreBtn>
               </Link>
-            </div>
+            </CardInnerBox>
           </BackgroundCard>
         ))}
-      </div>
+      </MainContainer>
     </BackgroundContainer>
   );
 };

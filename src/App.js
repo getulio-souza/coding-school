@@ -6,6 +6,7 @@ import Intro from './components/Intro/intro';
 import Formacoes from './components/formacoes/formacoes';
 import Vagas from './components/vagas/vagas';
 import VagasFront from './components/vagas/front/vagasFront';
+import FrontSingle from './components/vagas/front/frontSingle/frontSingle';
 
 const routes = createBrowserRouter ([
   {
@@ -28,6 +29,11 @@ const routes = createBrowserRouter ([
     path: '/vagas-front-end',
     element: <VagasFront/>
   },
+  {
+    path: '/single-job',
+    element: <FrontSingle/>
+  },
+
 ])
 
 function App() {
