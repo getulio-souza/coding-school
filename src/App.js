@@ -30,7 +30,7 @@ const routes = createBrowserRouter ([
     element: <VagasFront/>
   },
   {
-    path: '/single-job',
+    path: '/vagas-front-end/single-job',
     element: <FrontSingle/>
   },
 

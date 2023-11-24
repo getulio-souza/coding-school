@@ -18,19 +18,19 @@ const VagasFront = ({ navigation }) => {
   // Sample data for demonstration
   const jobData = [{
       title: "React Front End Jr.",
-      company: "Company X",
+      company: "InnovateTech Solutions",
       location: "Sao Paulo, Brasil",
       address: "Av. Paulista, 122- Centro - São Paulo - SP"
     },
     {
       title: "Backend Developer",
-      company: "Company Y",
+      company: "NexusSoft Technologies",
       location: "Rio de Janeiro, Brasil",
       address: "Rua Copacabana, 45 - RJ"
     },
     {
       title: "FullStack Engineer",
-      company: "Company Z",
+      company: "VelocityTech Labs",
       location: "Belo Horizonte, Brasil",
       address: "Avenida Savassi, 78 - MG"
     },
@@ -89,11 +89,11 @@ const VagasFront = ({ navigation }) => {
     <BackgroundContainer>
       {/* header */}
       <Header>
-        <Title>Vagas Front-End</Title>
+        <Title>Vagas de tecnologia</Title>
       </Header>
       {/* subtitle */}
       <div style={{ paddingBottom: 40, textAlign: 'center' }}>
-        <p>Novas oportunidades todas as semanas </p>
+        <p>Novas oportunidades todas as semanas.</p>
       </div>
 
       <MainContainer style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 30 }}>
@@ -126,7 +126,7 @@ const VagasFront = ({ navigation }) => {
                 </CompanyLocationInfo>
               </CompanyLocation>
               {/* show more btn */}
-              <Link Link to = "//single-job" >
+              <Link to ="/vagas-front-end/single-job">
                 <ShowMoreBtn>Mostrar mais</ShowMoreBtn>
               </Link>
             </CardInnerBox>
